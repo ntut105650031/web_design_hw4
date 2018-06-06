@@ -1,0 +1,384 @@
+html {
+    background: rgb(224,246,244);
+    width:100%;
+}
+
+body {
+    margin: 0;
+    text-align:center;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+h2, h3, p {
+    font-family: "Calibri";
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 40px;
+    margin: 5px 0;
+    padding: 0;
+}
+
+h2 {
+    font-size: 28px;
+}
+
+h3 {
+    font-size: 24px;
+}
+p {
+    text-align: left;
+    font-size: 14px;
+}
+
+a {
+    color:#000;
+    text-decoration: none;
+    font-size: 14px;    
+}
+a:hover {
+    color: rgb(2,106,113);
+    text-decoration: underline;
+}
+
+nav {
+    background: rgb(111,224,218);
+}
+.nav {
+    height: 140px;
+    margin: 0 auto;
+}
+.nav > .btn {
+    padding-top: 38px;
+    width: 140px;
+    float: left;
+}
+
+.bars {
+    float: left;
+}
+.bars > li {
+    width: 60px;
+    height: 12px;
+    margin-bottom: 12px;
+    background: #000;
+    border-radius: 4px;
+}
+
+.btn > h3 {
+    padding-top: 10px;
+    float: right;
+}
+
+.nav > .search {
+    padding-top: 46px;
+    float: right;
+}
+
+.search > input {
+    font-size: 32px;
+    width: 216px;
+    position: relative;
+    top: -10px;
+}
+
+.search img{
+    width: 48px;
+}
+
+.logo {
+    margin-top: -126px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+}
+
+.logo > img {
+    width: 75px;
+    height: 75px;
+}
+
+header {
+    height: 420px;
+    background: url(../image/header.png);
+    background-size: cover;
+    margin-bottom: 118px;
+}
+
+.slogan {
+    margin: 0 auto;
+    margin-bottom: 58px;
+    height: 330px;
+    background: url(../image/slogan.png);
+    background-size: cover;
+}
+
+.slogan > div {
+    width: 550px;
+    padding-top: 115px;
+    padding-left: 73px;
+}
+
+.product {
+    height: 295px;
+    margin: 0 auto;
+    margin-bottom: 118px;
+}
+
+.key {
+    width: 580px;
+    height: 295px;
+    float: left;
+}
+
+.key_img {
+    background: url(../image/key.png);
+}
+
+.key_text {
+    width: 580px;
+    height: 295px;
+    position: relative;
+    top: -270px;
+}
+
+.gift {
+    width: 580px;
+    height: 295px;
+    float: right;
+}
+
+.gift_img {
+    background: url(../image/gift.png);
+}
+
+.gift_text {
+    width: 580px;
+    position: relative;
+    top: -55px;
+}
+
+footer {
+    background: rgb(10,187,181); 
+    width: 100%;
+    height: 203px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    box-sizing: border-box;
+}
+
+.footer {
+    margin: 0 auto;
+    height: 163px;
+}
+
+.footer > ul {
+    margin-left: -40px;
+}
+
+.footer > ul > li {
+    width: 270px;
+    height: 163px;
+    background: #c1eeec;
+    float: left;
+    margin-left: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    box-sizing: border-box;
+}
+
+.footer > ul > li > p {
+    margin-bottom: 5px;
+}
+
+.footer > ul > li > h3 {
+    margin-bottom: 10px;
+}
+.footer > ul > li > ul {
+    margin-left: -20px;
+    width: 272px;
+    height: 48px;
+    margin-top: 5px;
+}
+.footer > ul > li > ul > li {
+    float: left;
+    margin-left: 20px;
+}
+
+.M_appear {
+    display: none;
+}
+
+/* size */
+@media (max-width: 767px) {
+    h1 {
+        font-size: 24px;
+    }
+
+    .search, .btn > h3 {
+        display: none;
+    }
+
+    .logo > h2 {
+        font-size: 20px;
+    }
+    .slogan, .slogan > div, .key, .gift, .key_text, .gift_text, .footer {
+        width: 100%;
+    }
+
+    header {
+        height: 177px;
+        margin-bottom: 58px;
+        background: url(../image/header_S.png);
+        background-size: cover;
+    }
+    .slogan {
+        height: 138px;
+        background: url(../image/slogan_S.png);
+        background-size: cover;
+    }
+    .slogan > div {
+        padding: 0;
+        background: white;
+        position: relative;
+        top: 138px;
+    }
+    .product {
+        margin-top: 116px;
+    }
+    .product > .key, .product > .gift {
+        height: 204px;
+    }    
+
+    .key_img {
+        height: 204px;
+        background: url(../image/key_S.png);
+        background-size: cover;
+    }
+
+    .key_text, .gift_text {
+        top: -50px;
+    }
+
+    .key, .gift {
+        float: none;
+    }
+
+    .product > div.key{
+        margin-bottom: 58px;
+    }
+
+    .gift_img {
+        height: 204px;
+        background: url(../image/gift_S.png);
+        background-size: cover;
+    }
+    footer {
+        margin-top: 234px;
+        height: 752px;
+    }
+    .footer {
+        margin: 0 auto;
+        width:270px;
+    }
+
+    .footer > ul > li {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 1199px) and (min-width: 768px){
+    h1 {
+        font-size: 32px;
+    }
+    .nav {
+        width: 92.8%;
+    }
+    .search {
+        display: none;
+    }
+    header {
+        background: url(../image/header_M.png);
+        background-size: cover;
+    }
+    .slogan {
+        background: url(../image/slogan_M.png);
+        background-size: cover;
+        height: 190px;
+    }
+    .slogan > div {
+        padding-top: 50px;
+        padding-left: 0;
+        margin-left: -20px;
+    }
+    .product {
+        width: 580px;
+        height: 650px;
+    }
+    .key, .gift {
+        float: none;
+    }
+    .gift {
+        margin-top: 60px;
+    }
+    footer {
+        width: 100%;
+        height: 280px;
+    }
+    .footer {
+        width: 679px;
+        height: 150px;
+    }
+    .footer > ul {
+        margin-left: -20px;
+        height: 150px;
+    }
+    .footer > ul > li {
+        width: 213px;
+        height: 150px;
+        margin-left: 20px;
+    }
+    .footer > ul > li > h3{
+        font-size: 16px;
+    }
+    
+    .footer > .M_appear {
+        display: block;
+        width: 679px;
+        height: 75px;
+        background: #c1eeec;
+        margin-top: 20px;
+        margin-left: 0;
+    }
+    .footer > .M_appear > li {
+        background:transparent;
+        width: 48px;
+        margin-left: 60px;
+        margin-right: 60px;
+    }
+    
+    .M_None {
+        display: none;
+    }
+}
+
+@media (min-width: 1200px) {
+    .nav, .slogan, .product {
+        width: 1193px;
+    }
+    .footer {
+        width: 1200px;
+    }
+}
+
+.clear {
+    clear: both;
+}
